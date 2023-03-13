@@ -16,8 +16,10 @@ Cancellato
 Inserite inizialmente i dati tramite PhpMyAdmin.
 
 MILESTONE 2
-Create Model relativo ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
+Create Model relativo ed un Controller per mostrare nella home page tutti i treni 
+che sono in partenza dalla data odierna.
 
+-> OK stampa in pagina
 
 MILESTONE 3
 Aggiungiamo un seeder per la classe Train usando FakerPHP.

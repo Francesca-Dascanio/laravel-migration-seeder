@@ -16,9 +16,30 @@
                 <div class="row">
                     <div class="col text-center">
 
-                      <h1>
+                      <h1 class="my-5">
                         Laravel Migration Seeder
                       </h1>
+
+                      <div class="d-flex flex-column align-items-center">
+                        @foreach ($trains as $train)
+                        <div class="card mb-3" style="width: 80%;">
+                          <div class="card-header">
+                              Code: {{ $train->train_code }}
+                          </div>
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  Departure station: {{ $train->departure }}
+                              </li>
+                              <li class="list-group-item">
+                                  Departure date: {{ $train->departure_date }}
+                              </li>
+                              <li class="list-group-item">
+                                  Departure hour: {{ $train->departure_hour }}
+                              </li>
+                          </ul>
+                        </div>
+                        @endforeach
+                      </div>
 
                     </div>
                 </div>
