@@ -11,7 +11,7 @@ use  App\Models\Train;
 class PageController extends Controller
 {
     public function index() {
-        $trains = Train::all();
+        $trains = Train::where('departure_date', '>=', '2023-03-13')->get();
         // dd($trains);
 
         return view('welcome', [
