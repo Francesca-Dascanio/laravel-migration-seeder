@@ -25,11 +25,11 @@ class TrainTableSeeder extends Seeder
             $train->departure_hour = $faker->time();
             $train->arrival_date = $faker->date();
             $train->arrival_hour = $faker->time();
-            $train->train_code = $faker->randomNumber(5, true);
+            $train->train_code = $faker->unique()->randomNumber(4, true);
             $train->carriage_number = $faker->randomNumber(1, true);
             $train->train_delay = $faker->boolean();
             $train->train_cancelled = $faker->boolean();
-            $train->price = $faker->randomFloat(2);
+            $train->price = $faker->randomFloat(2, 0, 9999.99);
             $train->change_number = $faker->randomNumber(1, true);
             $train->save();
         }

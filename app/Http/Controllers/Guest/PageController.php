@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 // Importo model
 use  App\Models\Train;
+use Database\Seeders\TrainTableSeeder;
 
 class PageController extends Controller
 {
